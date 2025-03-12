@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f3d75, #5a99d4);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #0f3d75;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+.bank-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Signin Box */
+.signin-box {
+  background-color: #003366;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signin-box h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+input:focus {
+  outline: 2px solid #007bff;
+}
+
+/* OTP Button */
+.otp-btn {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.otp-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: -5px;
+}
+
+/* Sign In Button */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .signin-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
